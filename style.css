@@ -1,51 +1,58 @@
 body {
-  font-family: "Arial", sans-serif;
-  text-align: center;
-  background-color: black;
-  margin: 40px;
+  background: grey;
+}
 
+.result-message {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 h1 {
-  color: lightblue;
-
+ font-size: 6vw;
+ color: orange;
+}
+.intro{
+  font-size: 4vw;
+  color: blue;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
+.qOne{
+  font-size: 4vw;
+  color: purple;
 }
 
-button:hover {
-  background-color: #45a049;
+.qTwo{
+  font-size: 4vw;
+  color: red;
 }
 
-.image-container {
-  margin-top: 30px;
+button{
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.expimage{
-display:none;
-}
-.firstContinue{
-  display: none;
- padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
+input{
+  border-color: red;
+   margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
 }

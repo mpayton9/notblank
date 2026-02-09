@@ -1,25 +1,61 @@
-// let startButton = document.querySelector(".start-button");
+  let input1 = document.querySelector(".questionOne");
+  let input2 = document.querySelector(".questionTwo");
+  let button = document.querySelector("button");
+  let resultMessage = document.querySelector(".result-message");
+  let turtlesImage = document.querySelector(".turtles");
+  let questions = document.querySelector(".questions");
+  let background = document.querySelector(".background") || document.body;
 
-// startButton.addEventListener("click", function () {
+  button.onclick = function(){
 
-//   h1.style.display = none;
+    console.log("button check");
   
-// });
+    let answer1 = input1.value;
+    console.log(answer1);
+  
+    let answer2 = input2.value;
+    console.log(answer2);
+  
+    if(answer1 === "Katana" && answer2 === "Pepperoni"){
+      resultMessage.innerHTML = "LEONARDO";
+      turtlesImage.src = "leo.webp";
+      questions.style.display = "none";
+      background.style.backgroundColor = "blue";
+      resultMessage.style.color = "blue";
+      button.style.display = "none";
 
-let startButton = document.querySelector(".start-button");
- let explanation = document.querySelector(".explanation");
-let start = document.querySelector(".start");
-let expimage = document.querySelector(".expimage");
-let firstContinue = document.querySelector(".firstContinue");
+    } else if(answer1 === "Sai" && answer2=== "Meat Lovers"){
+      turtlesImage.src = "raph.webp";
+      resultMessage.innerHTML = "RAPHAEL";
+      questions.style.display = "none";
+      background.style.backgroundColor = "red";
+      resultMessage.style.color = "red";
+      button.style.display = "none";
 
-startButton.addEventListener("click", function() {
-    explanation.style.color = "violet";
-    explanation.style.fontSize = "50px";
-    explanation.innerHTML = "The moon hangs like a dying ember above Blackthorn Keep, its crumbling towers stabbing at the clouds. You awaken in a damp cell, the stench of rot and iron thick in your lungs. Chains rattle at your wrists, though one cuff has already snapped — old metal, rusted by centuries of forgotten prisoners. Shadows shift beyond the bars, whispering secrets you can almost understand. Somewhere in the distance, a bell tolls midnight. The castle stirs to life — or something close to it. You know one thing: if you don’t leave by dawn, you won’t leave at all.";
-   start.style.display = "none";
-    startButton.style.display = "none";
-    expimage.style.display;
-    expimage.style.alignSelf = "center";
-    firstContinue.style.display;
-    firstContinue.style.alignSelf = "center";
- });
+    } else if(answer1 === "Nunchucks" && answer2 === "ANYTHING"){
+      turtlesImage.src = "Mikey.webp";
+      resultMessage.innerHTML = "MICHELANGELO";
+      questions.style.display = "none";
+      background.style.backgroundColor = "orange";
+      resultMessage.style.color = "orange";
+      button.style.display = "none";
+
+    } else if(answer1 === "Staff" && answer2 === "Anchovies and Peanut Butter"){
+      turtlesImage.src = "Donatello.webp";
+      resultMessage.innerHTML = "DONATELLO";
+      questions.style.display = "none";
+      background.style.backgroundColor = "purple";
+      resultMessage.style.color = "purple";
+      button.style.display = "none";
+      
+    } else{
+      resultMessage.innerHTML = "None, Try a different combination!";
+      resultMessage.style.color = "#333";
+    }
+  };
+
+ 
+  
+
+
+
