@@ -47,7 +47,7 @@
       background.style.backgroundColor = "purple";
       resultMessage.style.color = "purple";
       button.style.display = "none";
-      
+
     } else{
       resultMessage.innerHTML = "None, Try a different combination!";
       resultMessage.style.color = "#333";
