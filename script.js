@@ -4,7 +4,7 @@
   let resultMessage = document.querySelector(".result-message");
   let turtlesImage = document.querySelector(".turtles");
   let questions = document.querySelector(".questions");
-  let background = document.querySelector(".background") || document.body;
+  let background = document.querySelector(".background") 
 
   button.onclick = function(){
 
@@ -20,33 +20,45 @@
       resultMessage.innerHTML = "LEONARDO";
       turtlesImage.src = "leo.webp";
       questions.style.display = "none";
-      background.style.backgroundColor = "blue";
       resultMessage.style.color = "blue";
       button.style.display = "none";
+      function setBgBlue() {
+    document.body.style.backgroundColor = 'blue';
+}
+      setBgBlue();
 
     } else if(answer1 === "Sai" && answer2=== "Meat Lovers"){
       turtlesImage.src = "raph.webp";
       resultMessage.innerHTML = "RAPHAEL";
       questions.style.display = "none";
-      background.style.backgroundColor = "red";
       resultMessage.style.color = "red";
       button.style.display = "none";
+      function setBgRed() {
+    document.body.style.backgroundColor = 'red';
+}
+      setBgRed();
 
     } else if(answer1 === "Nunchucks" && answer2 === "ANYTHING"){
       turtlesImage.src = "Mikey.webp";
       resultMessage.innerHTML = "MICHELANGELO";
       questions.style.display = "none";
-      background.style.backgroundColor = "orange";
       resultMessage.style.color = "orange";
-      button.style.display = "none";
+      button.style.display = "none"
+      function setBgOrange() {
+    document.body.style.backgroundColor = 'orange';
+}
+      setBgOrange();  
 
     } else if(answer1 === "Staff" && answer2 === "Anchovies and Peanut Butter"){
       turtlesImage.src = "Donatello.webp";
       resultMessage.innerHTML = "DONATELLO";
       questions.style.display = "none";
-      background.style.backgroundColor = "purple";
       resultMessage.style.color = "purple";
       button.style.display = "none";
+      function setBgPurple() {       
+    document.body.style.backgroundColor = 'purple';
+}
+      setBgPurple();
 
     } else{
       resultMessage.innerHTML = "None, Try a different combination!";
